@@ -1,5 +1,3 @@
-// Use this matrix for solution
-
 let matrix = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
@@ -10,4 +8,14 @@ let matrix = [
 let r = 3;
 let c = 2;
 
-// Write code here. 
+for (let i = 0; i < r; i++) {
+    const element = matrix[i]
+    for (let j = 0; j < c - 1; j++) {
+        const element2 = element[j]
+        for (let b = 1; b < c; b++) {
+            const element3 = element[b]
+            console.log(`${element2} ${element3}`);
+        }
+    }
+
+}
